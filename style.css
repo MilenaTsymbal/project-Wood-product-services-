@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: 'KyivType';
+    src: url('./fonts/KyivType-NoVariable/OTF/KyivTypeSans-Medium3.otf');
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+body {
+    background: #222021;
+    background-image: url('./images/background.png');
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 139.4%;
+    color: #F5F5F5;
+}
+
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Inter', sans-serif; */
+
+.background {
+    background: url('./images/backgroundImage.png') no-repeat;
+    /* width: 908px; */
+    object-fit: contain;
+    height: 1080px;
+    border-radius: 3px 62px 62px 0px;
+}
+
+header {
+    height: 130px;
+    display: inline;
+}
+
+.header-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    margin-bottom: 86px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 63px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.solid-wood-products {
+    background: #1E0C06;
+    border-radius: 43px 0px 0px 43px;
+    width: 1245px;
+    height: 714px;
+
+}
+
+.solid-wood-products-section {
+    display: flex;
+    justify-content: end;
+}
+
+.solid-wood-products {
+    filter: drop-shadow(0px 4px 52px rgba(245, 245, 245, 0.17));
+    display: flex;
+    margin-bottom: 414px;
+}
+
+.solid-wood-products-info {
+    padding-left: 50px;
+}
+
+h1 {
+    font-family: 'KyivType';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 100px;
+    line-height: 104px;
+    text-transform: uppercase;
+    padding-top: 75px;
+    margin-bottom: 22px;
+    width: 620px;
+}
+
+.solid-wood-products-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 39px;
+    color: #FFDBBB;
+    width: 330px;
+    margin-bottom: 58px;
+}
+
+.solid-wood-products-btn {
+    width: 225px;
+    height: 58px;
+    background: #728BAD;
+    border-radius: 42px;
+}
+
+.solid-wood-products-separator {
+    width: 0;
+    height: 511px;
+    border: 1px solid #F5F5F5;
+    margin-top: 43px;
+}
+
+.solid-wood-products-images {
+    position: relative;
+    width: 600px;
+}
+
+.solid-wood-products-image1 {
+    position: absolute;
+    right: 80px;
+    top: 43px;
+}
+
+.solid-wood-products-image2 {
+    position: absolute;
+    top: 316px;
+    right: 323px;
+}
+
+.solid-wood-products-image3 {
+    position: absolute;
+    right: 80px;
+    bottom: 57px;
+}
+
+h2 {
+    font-family: 'KyivType';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 90px;
+    line-height: 120px;
+    text-transform: uppercase;
+}
+
+.the-wood-we-work-with-title {
+    width: 750px;
+    padding-left: 200px;
+    margin-bottom: 125px;
+}
+
+.the-wood-we-work-with-options {
+    display: flex;
+}
+
+.type-of-wood {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.type-of-wood-img{
+    margin-bottom: 39px;
+}
+
+.wood {
+    margin-bottom: 38px;
+}
+
+.advantages-of-wood {
+    padding-left: 20px;
+}
+
+.advantages-of-wood-item {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.advantages-of-wood-item img{
+    padding-right: 10px;
+}
+
+.cross {
+    width: 19px;
+    height: 19px;
+}
