@@ -179,6 +179,8 @@ h2 {
 
 .the-wood-we-work-with-options {
     display: flex;
+    justify-content: space-around;
+    align-items: baseline;
 }
 
 .type-of-wood {
