@@ -1,3 +1,4 @@
+/* ! GENERAL STYLES */
 * {
     margin: 0;
     padding: 0;
@@ -25,6 +26,11 @@ button {
     cursor: pointer;
 }
 
+button:hover  {
+    transform: translateY(5px);
+    background-color: #607594;
+}
+
 @font-face {
     font-family: 'KyivType';
     src: url('./fonts/KyivType-NoVariable/OTF/KyivTypeSans-Medium3.otf');
@@ -49,6 +55,7 @@ body {
 /* font-family: 'Montserrat', sans-serif; */
 /* font-family: 'Inter', sans-serif; */
 
+/* !HEADER */
 .background {
     background: url('./images/backgroundImage.png') no-repeat;
     /* width: 908px; */
@@ -91,6 +98,8 @@ nav ul li {
     font-size: 20px;
     line-height: 24px;
 }
+
+/* !SOLID WOOD PROCUCTS SECTION*/
 
 .solid-wood-products {
     background: #1E0C06;
@@ -143,6 +152,7 @@ h1 {
     height: 58px;
     background: #728BAD;
     border-radius: 42px;
+    transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
 .solid-wood-products-separator {
@@ -175,65 +185,59 @@ h1 {
     bottom: 57px;
 }
 
-.the-wood-we-work-with {
-    margin-bottom: 263px;
+/* !ADVANTAGES WORKING WITH US SECTION*/
+
+.advantages-of-work {
+    margin-bottom: 316px;
 }
 
-h2 {
-    font-family: 'KyivType';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 90px;
-    line-height: 120px;
-    text-transform: uppercase;
+.advantages-of-work-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 132px;
 }
 
-.the-wood-we-work-with-title {
-    width: 750px;
+.advantages-of-work-title {
     padding-left: 200px;
-    margin-bottom: 125px;
+    margin-bottom: 120px;
+    width: 1040px;
 }
 
-.the-wood-we-work-with-options {
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
+video {
+    width: 609px;
+    height: 370px;
+    border-radius: 42px;
+    display: inline-block;
+    margin-left: 70px;
+    object-fit: cover;
 }
 
-.type-of-wood {
-    width: 240px;
+video:hover::-webkit-media-controls {
+    opacity: 1;
+    visibility: visible;
+}
+
+.advantages-of-work-text p {
+    width: 453px;
+    margin-bottom: 46px;
+}
+
+.advantages-of-work-button {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
-.type-of-wood-img {
-    margin-bottom: 39px;
+.advantages-of-work-btn {
+    width: 472px;
+    height: 58px;
+    background: #728BAD;
+    border-radius: 42px;
+    color: #F5F5F5;
+    transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
-.wood {
-    margin-bottom: 38px;
-}
-
-.advantages-of-wood {
-    padding-left: 20px;
-}
-
-.advantages-of-wood-item {
-    display: flex;
-    margin-bottom: 20px;
-    align-items: center;
-}
-
-.advantages-of-wood-item img {
-    padding-right: 10px;
-}
-
-.cross {
-    width: 19px;
-    height: 19px;
-}
+/* !OUR WORK SECTION */
 
 .our-work-section {
     margin: 0;
@@ -357,54 +361,135 @@ h2 {
     background: #D5DCEE;
 }
 
-.advantages-of-work {
-    margin-bottom: 316px;
+/* !THE WOOD WE WORK WITH SECTION */
+
+.the-wood-we-work-with {
+    margin-bottom: 263px;
 }
 
-.advantages-of-work-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 132px;
+h2 {
+    font-family: 'KyivType';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 90px;
+    line-height: 120px;
+    text-transform: uppercase;
 }
 
-.advantages-of-work-title {
+.the-wood-we-work-with-title {
+    width: 750px;
     padding-left: 200px;
-    margin-bottom: 120px;
-    width: 1040px;
+    margin-bottom: 125px;
 }
 
-video {
-    width: 609px;
-    height: 370px;
-    border-radius: 42px;
-    display: inline-block;
-    margin-left: 70px;
-    object-fit: cover;
-}
-
-video:hover::-webkit-media-controls {
-    opacity: 1;
-    visibility: visible;
-}
-
-.advantages-of-work-text p {
-    width: 453px;
-    margin-bottom: 46px;
-}
-
-.advantages-of-work-button {
+.the-wood-we-work-with-options {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: baseline;
 }
 
-.advantages-of-work-btn {
-    width: 472px;
-    height: 58px;
-    background: #728BAD;
-    border-radius: 42px;
-    color: #F5F5F5;
+.type-of-wood {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.type-of-wood-img {
+    margin-bottom: 39px;
+}
+
+.wood {
+    margin-bottom: 38px;
+}
+
+.advantages-of-wood {
+    padding-left: 20px;
+}
+
+.advantages-of-wood-item {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.advantages-of-wood-item img {
+    padding-right: 10px;
+}
+
+.cross {
+    width: 19px;
+    height: 19px;
+}
+
+/* !ABOUT US SECTION */
+
+.about-us {
+    width: 1325px;
+    height: 775px;
+    background: #1E0C06;
+    border-radius: 0px 42px 42px 0px;
+    box-shadow: 0px -8px 52px rgba(245, 245, 245, 0.17);
+    display: flex;
+}
+
+.about-us-info {
+    padding-left: 253px;
+    padding-top: 44px;
+    width: 100%;
+    position: relative;
+}
+
+.about-us-text {
+    width: 516px;
+    padding-top: 67px;
+}
+
+.about-us-images {
+    position: relative;
+}
+
+.about-us-image1 {
+    position: absolute;
+    right: 70px;
+    top: 61px;
+} 
+
+.about-us-image2 {
+    position: absolute;
+    right: 157px;
+    top: 177px;
+    border-radius: 42px;
+    border: 15px solid #1E0C06;
+} 
+
+.about-us-image3 {
+    position: absolute;
+    right: 102px;
+    bottom: 25px;
+}
+
+/* !CONTACTS SECTION */
+
+.contacts {
+    padding-top: 90px;
+    padding-left: 100px;
+    margin-bottom: 290px;
+    position: relative;
+}
+
+.contacts-title {
+    margin-bottom: 118px;
+}
+
+.map {
+    position: absolute;
+    top: 90px;
+    right: 0;
+}
+
+/* !ANY QUESTIONS SECTION */
 
 .any-questions-title {
     display: flex;
@@ -465,11 +550,14 @@ textarea {
     background: #728BAD;
     border-radius: 42px;
     color: #F5F5F5;
+    transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
 .any-questions-text {
     width: 546px;
 }
+
+/* !FOOTER */
 
 footer {
     background: #222021;
@@ -519,65 +607,5 @@ footer {
     height: 50px;
 }
 
-.about-us {
-    width: 1325px;
-    height: 775px;
-    background: #1E0C06;
-    border-radius: 0px 42px 42px 0px;
-    box-shadow: 0px -8px 52px rgba(245, 245, 245, 0.17);
-    display: flex;
-}
 
-.about-us-info {
-    padding-left: 253px;
-    padding-top: 44px;
-    width: 100%;
-    position: relative;
-}
-
-.about-us-text {
-    width: 516px;
-    padding-top: 67px;
-}
-
-.about-us-images {
-    position: relative;
-}
-
-.about-us-image1 {
-    position: absolute;
-    right: 70px;
-    top: 61px;
-} 
-
-.about-us-image2 {
-    position: absolute;
-    right: 157px;
-    top: 177px;
-    border-radius: 42px;
-    border: 15px solid #1E0C06;
-} 
-
-.about-us-image3 {
-    position: absolute;
-    right: 102px;
-    bottom: 25px;
-}
-
-.contacts {
-    padding-top: 90px;
-    padding-left: 100px;
-    margin-bottom: 290px;
-    position: relative;
-}
-
-.contacts-title {
-    margin-bottom: 118px;
-}
-
-.map {
-    position: absolute;
-    top: 90px;
-    right: 0;
-}
 
