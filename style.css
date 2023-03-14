@@ -8,6 +8,10 @@
     vertical-align: baseline;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 ol,
 ul {
     list-style: none;
@@ -54,6 +58,28 @@ body {
 
 /* font-family: 'Montserrat', sans-serif; */
 /* font-family: 'Inter', sans-serif; */
+
+/* !SCROLL TOP */
+
+.scrollTop {
+    position: fixed;
+    bottom: 60px;
+    right: 70px;
+    font-style: 40px;
+    z-index: 10;
+    cursor: pointer;
+
+}
+
+.showScroll {
+    opacity: 1;
+    transition: opacity 1s ease;
+} 
+
+.hideScroll {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
 
 /* !HEADER */
 .background {
@@ -606,6 +632,3 @@ footer {
     width: 37px;
     height: 50px;
 }
-
-
-
